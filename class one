@@ -1,0 +1,35 @@
+##Intro Course
+
+library(coin)
+library(tidyverse)
+getwd()
+#Join ASA 
+#do i need to buy book?
+#r markdown
+
+#single hash is smaller font
+#double hash is larger font
+#echo= false; code won't print, just output
+attach(cars)
+plot(speed, dist)
+#show structure of data set
+str(cars)
+names(cars)
+#start help server
+help()
+help(cars)
+#lowess curve
+lines(lowess(cars$speed, cars$dist, f = 2/3, iter = 3), col = "red")
+#localized weighted regression smoother
+
+#remove objects
+rm()
+#session info
+sessionInfo()
+#will show version and pacakges info
+#locale is important for coding or something?
+
+#nonparametric is not wihtout assumptions, it's with little/basic assumptions 
+#data is continuous
+#obs are independent
+#need independence and continuity
